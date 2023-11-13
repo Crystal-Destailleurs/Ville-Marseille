@@ -32,6 +32,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
+    text-decoration: underline;
 }
 
 .fondations img {
@@ -52,6 +53,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
+    text-decoration: underline;
 }
 
 .ajd {
@@ -68,6 +70,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
+    text-decoration: underline;
 }
 
 .grid {
@@ -89,6 +92,7 @@ body {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
+    text-decoration: underline;
 }
 
 .Informations ul {
@@ -116,6 +120,7 @@ body {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
+    text-decoration: underline;
 }
 
 .Transports ul {
