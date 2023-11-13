@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 h1 {
+    display: flex;
     font-size: 3.5em;
     text-align: center;
     text-transform: uppercase;
     font-family: 'PT Serif', serif;
-
+    background: url(assets/bg2.jpg) no-repeat center/cover;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    text-shadow: 3px 3px 10px black ;
 }
 
 .flex {
     display: flex;
 }
 
-body {
+header {
     background: url(assets/bg.jpg) no-repeat center/cover ;
+    height: 100px;
+}
+
+body {
+    
     backdrop-filter: blur(5px);
     font-family: 'PT Serif', serif;
 }
@@ -73,6 +85,8 @@ body {
     text-decoration: underline;
 }
 
+
+
 .grid {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -121,6 +135,10 @@ body {
     text-transform: uppercase;
     text-align: center;
     text-decoration: underline;
+}
+
+.Transports h3:visited {
+    color: black;htm
 }
 
 .Transports ul {
