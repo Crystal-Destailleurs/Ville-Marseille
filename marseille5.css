@@ -1,0 +1,231 @@
+/* -------------------------------------------------------Styles globaux du site */
+
+/* Styles globaux du site */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------------------------------------Style de base pour le header et la barre de navigation */
+header {
+    background-color: rgb(112, 168, 231);
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+nav {
+    text-align: left; /
+}
+
+.menu {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block; 
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0; 
+}
+
+.menu li a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
+}
+
+.menu li a:hover {
+    color: #ffa500; 
+}
+
+/* -------------------------------------------------------------Style pour le menu déroulant */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ------------------------------------------------------Style pour le logo à droite */
+.logo {
+    width: 120px;
+    margin-left: auto; 
+    border-radius: 12px;
+}
+
+/* -------------------------------------------------------Style CardHover Effect */
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+}
+
+.container .card:hover {
+    height: 400px;
+
+}
+
+.container .card .imgBox {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: rgb(20, 20, 19);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.container .card:hover .imgBox {
+    top: -100px;
+    scale: 0.75;
+    box-shadow : 0 15px 45px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 50px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 130px;
+    height: 250px;
+
+}
+
+.container .card .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
+
+
+footer {
+    background-color: rgb(112, 168, 231);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligner verticalement les éléments au centre */
+    color: white;
+}
+
+footer nav {
+    text-align: left;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: #ffa500;
+}
+
+/* Style pour le menu déroulant dans le footer */
+footer .dropdown-content {
+    background-color: rgba(47, 52, 58, 0.788);
+    border-radius: 12px;
+    position: absolute;
+    top: -200px; /* Modifier la valeur en fonction de la hauteur souhaitée du dropdown */
+    left: 0;
+    display: none;
+    min-width: 160px;
+    z-index: 1;
+}
+
+footer .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+footer .dropdown-content a:hover {
+    background-color: #555;
+    border-radius: 10px;
+}
+footer .dropdown:hover .dropdown-content {
+    display: block;
+}

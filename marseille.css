@@ -1,5 +1,6 @@
 /* -------------------------------------------------------Styles globaux du site */
 
+/* Styles globaux du site */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,46 +8,44 @@ body {
     box-sizing: border-box;
 }
 
+/* ---------------------------------------Style de base pour le header et la barre de navigation */
 header {
-    background-color: #0072b6;
-    color: #fff;
-    padding: 10px 0;
+    background-color: rgb(112, 168, 231);
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
 }
 
 nav {
-    text-align: left; 
-}
-
-.nav-logo {
-    width: 50px; /* Ajustez la largeur selon vos besoins */
-    height: auto; /* Garantit que la hauteur est ajustée en proportion de la largeur */
-    margin-right: 10px; /* Ajustez la marge à droite selon vos besoins */
+    text-align: left; /
 }
 
 .menu {
-    list-style: none;
-    padding: 0;
+    list-style-type: none; 
     margin: 0;
+    padding: 0;
 }
 
 .menu li {
-    display: inline-block;
-    position: relative;
+    display: inline-block; 
+    margin-right: 20px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: rgb(230, 228, 228);
-    font-weight: bold;
-    font-size: 16px;
-    padding: 0 10px; /* Ajouter un espacement */
-    transition: color 0.3s; /* Ajouter une transition de couleur */
+.menu li:last-child {
+    margin-right: 0; 
 }
 
-.menu a:hover {
-    color: #ff9900; /* Changer la couleur lors du survol */
+.menu li a {
+    text-decoration: none; 
+    color: white; 
+    font-weight: bold; 
 }
 
+.menu li a:hover {
+    color: #ffa500; 
+}
+
+/* -------------------------------------------------------------Style pour le menu déroulant */
 .dropdown {
     position: relative;
 }
@@ -54,29 +53,36 @@ nav {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #1b1717e5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    top: 100%; /* Positionner le menu déroulant sous l'élément parent */
-    min-width: 200px;
-    text-align: left;
-    transition: opacity 0.5s, transform 0.5s; /* Ralentir l'ouverture du menu déroulant */
-    transform: translateX(-100%); /* Déplacer le sous-menu à gauche de l'écran */
-    opacity: 0; /* Cacher initialement le menu */
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    transform: translateX(0); /* Rétablir la position initiale pour l'effet d'ouverture */
-    opacity: 1; /* Afficher le menu déroulant en douceur */
 }
 
-.dropdown-content li {
-    padding: 10px;
+/* ------------------------------------------------------Style pour le logo à droite */
+.logo {
+    width: 120px;
+    margin-left: auto; 
+    border-radius: 12px;
 }
 
 /* -------------------------------------------------------Style CardHover Effect */
-
-
 .container {
     position: relative;
     display: flex;
@@ -159,38 +165,67 @@ nav {
 
 
 
-/* Styles pour le footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: rgb(112, 168, 231);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligner verticalement les éléments au centre */
+    color: white;
 }
 
-.footer-menu ul {
-    list-style: none;
-    padding: 0;
+footer nav {
+    text-align: left;
+}
+
+.menu {
+    list-style-type: none;
     margin: 0;
-    text-align: center;a
+    padding: 0;
 }
 
-.footer-menu li {
-    display: inline;
-    margin: 0 20px;
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
-.footer-menu a {
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: bold;
-    font-size: 14px;
-    transition: color 0.3s; /* Ajouter une transition de couleur */
 }
 
-.footer-menu a:hover {
-    color: #ff9900; /* Changer la couleur lors du survol */
+.menu li a:hover {
+    color: #ffa500;
 }
 
-#logo-marseille-f img {
-    margin-top: 20px;
+/* Style pour le menu déroulant dans le footer */
+footer .dropdown-content {
+    background-color: rgba(47, 52, 58, 0.788);
+    border-radius: 12px;
+    position: absolute;
+    top: -200px; /* Modifier la valeur en fonction de la hauteur souhaitée du dropdown */
+    left: 0;
+    display: none;
+    min-width: 160px;
+    z-index: 1;
 }
 
+footer .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+footer .dropdown-content a:hover {
+    background-color: #555;
+    border-radius: 10px;
+}
+footer .dropdown:hover .dropdown-content {
+    display: block;
+}
