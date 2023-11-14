@@ -1,0 +1,110 @@
+/* Styles globaux du site */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0072b6;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: left; /* Aligner le texte à gauche */
+}
+
+.logo-marseille {
+
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(230, 228, 228);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 10px; /* Ajouter un espacement */
+    transition: color 0.3s; /* Ajouter une transition de couleur */
+}
+
+.menu a:hover {
+    color: #ff9900; /* Changer la couleur lors du survol */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1b1717e5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 100%; /* Positionner le menu déroulant sous l'élément parent */
+    min-width: 200px;
+    text-align: left;
+    transition: opacity 0.5s, transform 0.5s; /* Ralentir l'ouverture du menu déroulant */
+    transform: translateX(-100%); /* Déplacer le sous-menu à gauche de l'écran */
+    opacity: 0; /* Cacher initialement le menu */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    transform: translateX(0); /* Rétablir la position initiale pour l'effet d'ouverture */
+    opacity: 1; /* Afficher le menu déroulant en douceur */
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+
+
+/* Styles pour le footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;a
+}
+
+.footer-menu li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s; /* Ajouter une transition de couleur */
+}
+
+.footer-menu a:hover {
+    color: #ff9900; /* Changer la couleur lors du survol */
+}
+
+#logo-marseille-f img {
+    margin-top: 20px;
+}
