@@ -8,6 +8,10 @@ body {
     box-sizing: border-box;
 }
 
+main {
+    display: flex
+}
+
 /* ---------------------------------------Style de base pour le header et la barre de navigation */
 header {
     background-color: rgb(112, 168, 231);
