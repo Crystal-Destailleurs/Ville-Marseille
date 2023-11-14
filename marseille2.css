@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+h1 {
+    display: flex;
+    font-size: 3.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif;
+    background: url(assets/bg2.jpg) no-repeat center/cover;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    text-shadow: 3px 3px 10px black ;
+}
+
+header {
+    background: url(assets/bg.jpg) no-repeat center/cover ;
+    height: 100px;
+}
+
+body {
+    
+    backdrop-filter: blur(5px);
+    font-family: 'PT Serif', serif;
+}
+
+.intro {
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(100, 171, 219);
+}
+
+.intro ul {
+    list-style: none;
+    text-align: center;
+    margin-left: -35px;
+}
+
+.balade1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.belvedere {
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(100, 171, 219);
+}
+
+.goudes {
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(100, 171, 219);
+}
+
+.balade2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.puget {
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(100, 171, 219);
+}
+
+.calanques {
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(100, 171, 219);
+}
+
+.pagnol {
+    background-color: rgba(255, 255, 255, 0.801);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(100, 171, 219);
+}
+
+.belvedere,
