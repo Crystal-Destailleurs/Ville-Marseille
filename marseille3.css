@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 /* Styles globaux du site */
 
 header {
@@ -5,17 +7,14 @@ header {
     height: 100px;
 }
 
-body {
-    
-    backdrop-filter: blur(5px);
-    font-family: 'PT Serif', serif;
-}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'PT Serif', serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 header {
@@ -26,6 +25,8 @@ header {
 
 nav {
     text-align: left; /* Aligner le texte à gauche */
+    padding-top: 75px;
+    
 }
 
 .logo-marseille {
@@ -47,7 +48,7 @@ nav {
     text-decoration: none;
     color: rgb(230, 228, 228);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0 10px; /* Ajouter un espacement */
     transition: color 0.3s; /* Ajouter une transition de couleur */
 }
@@ -75,7 +76,7 @@ nav {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    transform: translateX(0); /* Rétablir la position initiale pour l'effet d'ouverture */
+    transform: translateX(0); /* Rétablir la poremsition initiale pour l'effet d'ouverture */
     opacity: 1; /* Afficher le menu déroulant en douceur */
 }
 
@@ -84,7 +85,114 @@ nav {
 }
 /* fin navbar */
 
+h1 {
+    display: flex;
+    font-size: 3.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif;
+    background: url(assets/vieuxport2.jpg) no-repeat center/cover;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    text-shadow: 3px 3px 10px black ;
+}
 
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 19rem);
+    justify-content: space-around;
+    grid-gap: 10px;
+    margin-left: -20px;
+    margin-right: 20px;
+    
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+    
+}
+
+.container, .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    
+}
+
+
+.container .card:hover {
+    height: 450px;
+
+}
+
+.container, .card .imgBox {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.container, .card:hover .imgBox {
+    top: -100px;
+    scale: 0.75;
+    box-shadow : 0 15px 45px rgba(0, 0, 0, 0.249);
+}
+
+.container, .card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container, .card .content {
+    position: absolute;
+    top: 230px;
+    width: 100%;
+    padding: 0 30px;
+    height: 50px;
+    overflow: auto;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.content {
+}
+
+.container, .card:hover .content {
+    top: 100px;
+    height: 200px;
+
+}
+
+.container, .card .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
 
 /* Styles pour le footer */
 footer {

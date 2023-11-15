@@ -21,7 +21,12 @@ header {
 }
 
 nav {
-    text-align: left; /
+    text-align: left; 
+    
+}
+
+nav img {
+    
 }
 
 .menu {
@@ -182,28 +187,28 @@ footer nav {
     text-align: left;
 }
 
-.menu {
+.footer-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.menu li {
+.footer-menu li {
     display: inline-block;
     margin-right: 20px;
 }
 
-.menu li:last-child {
+.footer-menu li:last-child {
     margin-right: 0;
 }
 
-.menu li a {
+.footer-menu li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-.menu li a:hover {
+.footer-menu li a:hover {
     color: #ffa500;
 }
 
