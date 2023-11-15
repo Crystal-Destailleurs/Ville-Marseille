@@ -85,7 +85,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-family: 'PT Serif', serif;
-    background: url(assets/bg2.jpg) no-repeat center/cover;
+    background: url(assets/vieuxport2.jpg) no-repeat center/cover;
     height: 350px;
     justify-content: center;
     align-items: center;
@@ -98,10 +98,6 @@ h1 {
     display: flex;
 }
 
-header {
-    background: url(assets/bg.jpg) no-repeat center/cover ;
-    height: 100px;
-}
 
 body {
     

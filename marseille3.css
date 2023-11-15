@@ -10,6 +10,7 @@ header {
 
 body {
     font-family: 'PT Serif', serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -75,7 +76,7 @@ nav {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    transform: translateX(0); /* Rétablir la position initiale pour l'effet d'ouverture */
+    transform: translateX(0); /* Rétablir la poremsition initiale pour l'effet d'ouverture */
     opacity: 1; /* Afficher le menu déroulant en douceur */
 }
 
@@ -90,7 +91,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-family: 'PT Serif', serif;
-    background: url(assets/bg2.jpg) no-repeat center/cover;
+    background: url(assets/vieuxport2.jpg) no-repeat center/cover;
     height: 350px;
     justify-content: center;
     align-items: center;
@@ -99,7 +100,17 @@ h1 {
     text-shadow: 3px 3px 10px black ;
 }
 
-.container, {
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 19rem);
+    justify-content: space-around;
+    grid-gap: 10px;
+    margin-left: -20px;
+    margin-right: 20px;
+    
+}
+
+.container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -122,32 +133,34 @@ h1 {
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0,0,0,0.15);
     transition: 0.5s;
+    
 }
 
-.container, .card:hover {
-    height: 400px;
+
+.container .card:hover {
+    height: 450px;
 
 }
 
-.container .card .imgBox {
+.container, .card .imgBox {
     position: absolute;
     top: 20px;
     width: 300px;
     height: 220px;
-    background: rgb(20, 20, 19);
+    background: rgb(255, 255, 255);
     border-radius: 12px;
     overflow: hidden;
     transition: 0.5s;
 
 }
 
-.container, .card:hover, .imgBox {
+.container, .card:hover .imgBox {
     top: -100px;
     scale: 0.75;
-    box-shadow : 0 15px 45px rgba(0,0,0,0.2);
+    box-shadow : 0 15px 45px rgba(0, 0, 0, 0.249);
 }
 
-.container, .card, .imgBox img {
+.container, .card .imgBox img {
     position: absolute;
     top: 0;
     left: 0;
@@ -156,24 +169,27 @@ h1 {
     object-fit: cover;
 }
 
-.container, .card, .content {
+.container, .card .content {
     position: absolute;
-    top: 252px;
+    top: 230px;
     width: 100%;
     padding: 0 30px;
     height: 50px;
-    overflow: hidden;
+    overflow: auto;
     text-align: center;
     transition: 0.5s;
 }
 
-.container, .card:hover, .content {
-    top: 130px;
-    height: 250px;
+.content {
+}
+
+.container, .card:hover .content {
+    top: 100px;
+    height: 200px;
 
 }
 
-.container, .card, .content h2 {
+.container, .card .content h2 {
     font-size: 1.5em;
     font-weight: 700;
 }
