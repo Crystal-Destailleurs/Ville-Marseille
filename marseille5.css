@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
-/* Styles globaux du site */
-
+/* -----------------------------------------------------------Styles globaux du site */
 header {
     background: url(assets/bg.jpg) no-repeat center/cover ;
     height: 100px;
@@ -24,13 +23,9 @@ header {
 }
 
 nav {
-    text-align: left; /* Aligner le texte à gauche */
+    text-align: left; 
     padding-top: 75px;
     
-}
-
-.logo-marseille {
-
 }
 
 .menu {
@@ -49,12 +44,12 @@ nav {
     color: rgb(230, 228, 228);
     font-weight: bold;
     font-size: 20px;
-    padding: 0 10px; /* Ajouter un espacement */
-    transition: color 0.3s; /* Ajouter une transition de couleur */
+    padding: 0 10px; 
+    transition: color 0.3s; 
 }
 
 .menu a:hover {
-    color: #ff9900; /* Changer la couleur lors du survol */
+    color: #ff9900; 
 }
 
 .dropdown {
@@ -66,24 +61,24 @@ nav {
     position: absolute;
     background-color: #1b1717e5;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    top: 100%; /* Positionner le menu déroulant sous l'élément parent */
+    top: 100%; 
     min-width: 200px;
     text-align: left;
-    transition: opacity 0.5s, transform 0.5s; /* Ralentir l'ouverture du menu déroulant */
-    transform: translateX(-100%); /* Déplacer le sous-menu à gauche de l'écran */
-    opacity: 0; /* Cacher initialement le menu */
+    transition: opacity 0.5s, transform 0.5s; 
+    transform: translateX(-100%); 
+    opacity: 0; 
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    transform: translateX(0); /* Rétablir la poremsition initiale pour l'effet d'ouverture */
-    opacity: 1; /* Afficher le menu déroulant en douceur */
+    transform: translateX(0); 
+    opacity: 1; 
 }
 
 .dropdown-content li {
     padding: 10px;
 }
-/* fin navbar */
+/* -------------------------------------------------------------------fin navbar */
 
 h1 {
     display: flex;
@@ -194,7 +189,7 @@ h1 {
     font-weight: 700;
 }
 
-/* Styles pour le footer */
+/* ------------------------------------------------------------Styles pour le footer */
 footer {
     background-color: #333;
     color: #fff;
