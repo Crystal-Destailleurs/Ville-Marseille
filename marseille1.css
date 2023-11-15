@@ -75,10 +75,6 @@ nav {
     padding: 10px;
 }
 
-main {
-    padding: 20px;
-}
-
 h1 {
     display: flex;
     font-size: 3.5em;
@@ -106,24 +102,30 @@ body {
 }
 
 main {
-    padding: 10px;
+    padding: 20px;
+    background-image: url(./assets/livres.jpg);
+    background-attachment: fixed;
 }
 
 .fondations {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     text-align: center;
-    border: 2px solid rgb(100, 171, 219);
+    border: 2px solid azure;
 }
 
 .fondations h2 {
-    color: rgb(0, 0, 0);
+    color: azure;
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
     text-decoration: underline;
+}
+
+.fondations p {
+    color: azure;
 }
 
 .fondations img {
@@ -131,39 +133,46 @@ main {
 }
 
 .siecles {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     text-align: center;
-    border: 2px solid rgb(100, 171, 219);
+    border: 2px solid azure;
 }
 
 .siecles h2 {
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.801);
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
     text-decoration: underline;
 }
 
+.siecles p {
+    color: rgba(255, 255, 255, 0.801);
+}
+
 .ajd {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     text-align: center;
-    border: 2px solid rgb(100, 171, 219);
+    border: 2px solid rgba(255, 255, 255, 0.801);
 }
 
 .ajd h2 {
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.801);
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
     text-decoration: underline;
 }
 
+.ajd p {
+    color: rgba(255, 255, 255, 0.801);;
+}
 
 
 .grid {
@@ -172,20 +181,23 @@ main {
 }
 
 .Informations {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     
-    border: 2px solid rgb(100, 171, 219);
-
+    border: 2px solid rgba(255, 255, 255, 0.801);
 }
 
 .Informations h2 {
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.801);
     text-transform: uppercase;
     text-align: center;
     text-decoration: underline;
+}
+
+.Informations p {
+    color: rgba(255, 255, 255, 0.801);
 }
 
 .Informations ul {
@@ -200,30 +212,35 @@ main {
 }
 
 .Transports {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     
-    border: 2px solid rgb(100, 171, 219);
+    border: 2px solid rgba(255, 255, 255, 0.801);
 
 }
 
 .Transports h2 {
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.801);
     text-transform: uppercase;
     text-align: center;
     text-decoration: underline;
 }
 
-.Transports h3:visited {
-    color: black;
+.Transports h2:visited {
+    color: rgba(255, 255, 255, 0.801);
 }
 
 .Transports ul {
     list-style: none;
     text-align: center;
     margin-left: -35px;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.Transports li a {
+    color: rgba(255, 255, 255, 0.801);
 }
 
 
