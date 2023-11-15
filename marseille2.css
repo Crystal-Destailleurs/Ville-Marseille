@@ -3,7 +3,7 @@
 /* Styles globaux du site */
 
 header {
-    background: url(assets/bg.jpg) no-repeat center/cover ;
+    background: url(./assets/bg.jpg) no-repeat center/cover ;
     height: 100px;
 }
 
@@ -30,9 +30,6 @@ nav {
     text-align: left; /* Aligner le texte à gauche */
 }
 
-.logo-marseille {
-
-}
 
 nav {
     padding-top: 75px;
@@ -94,16 +91,13 @@ nav {
 }
 
 
-
-
-
 h1 {
     display: flex;
     font-size: 3.5em;
     text-align: center;
     text-transform: uppercase;
     font-family: 'PT Serif', serif;
-    background: url(assets/vieuxport2.jpg) no-repeat center/cover;
+    background: url(./assets/randonnée-Marseille.jpg) no-repeat center/cover;
     height: 350px;
     justify-content: center;
     align-items: center;
@@ -135,7 +129,7 @@ body {
 
 .articles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 19rem);
+    grid-template-columns: repeat(3, 19rem);
     justify-content: space-around;
     grid-gap: 10px;
     margin-left: -20px;

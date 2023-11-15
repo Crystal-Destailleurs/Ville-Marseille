@@ -97,13 +97,13 @@ h1 {
 
 .articles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 19rem);
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
     justify-content: space-around;
     grid-gap: 10px;
-    margin-left: -20px;
+    margin-left: 20px;
     margin-right: 20px;
-    
 }
+
 
 .container {
     position: relative;
@@ -113,7 +113,6 @@ h1 {
     flex-wrap: wrap;
     gap: 100px 50px;
     padding: 100px 50px;
-    
 }
 
 .container, .card {

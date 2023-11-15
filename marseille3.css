@@ -91,7 +91,7 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-family: 'PT Serif', serif;
-    background: url(assets/vieuxport.jpg) no-repeat center/cover;
+    background: url(./assets/les\ plages\ de\ marseille.jpg) no-repeat center/cover;
     height: 350px;
     justify-content: center;
     align-items: center;
@@ -102,7 +102,7 @@ h1 {
 
 .articles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 19rem);
+    grid-template-columns: repeat(3, 19rem);
     justify-content: space-around;
     grid-gap: 10px;
     margin-left: -20px;

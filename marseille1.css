@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
-/* Styles globaux du site */
+/* ---------------------------------------Styles globaux du site */
 
 body {
     font-family: Arial, sans-serif;
@@ -19,9 +19,6 @@ nav {
     text-align: left; /* Aligner le texte à gauche */
 }
 
-.logo-marseille {
-
-}
 
 nav {
     padding-top: 75px;
@@ -78,6 +75,9 @@ nav {
     padding: 10px;
 }
 
+main {
+    padding: 20px;
+}
 
 h1 {
     display: flex;
@@ -105,6 +105,10 @@ body {
     font-family: 'PT Serif', serif;
 }
 
+main {
+    padding: 10px;
+}
+
 .fondations {
     background-color: rgba(255, 255, 255, 0.801);
     border-radius: 20px;
@@ -114,7 +118,7 @@ body {
     border: 2px solid rgb(100, 171, 219);
 }
 
-.fondations h3 {
+.fondations h2 {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
@@ -135,7 +139,7 @@ body {
     border: 2px solid rgb(100, 171, 219);
 }
 
-.siecles h3 {
+.siecles h2 {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
@@ -152,7 +156,7 @@ body {
     border: 2px solid rgb(100, 171, 219);
 }
 
-.ajd h3 {
+.ajd h2 {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
@@ -177,7 +181,7 @@ body {
 
 }
 
-.Informations h3 {
+.Informations h2 {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
@@ -205,7 +209,7 @@ body {
 
 }
 
-.Transports h3 {
+.Transports h2 {
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
@@ -223,7 +227,7 @@ body {
 }
 
 
-/* Styles pour le footer */
+/* ------------------------------------------------------------------Styles pour le footer */
 footer {
     background-color: #333;
     color: #fff;
