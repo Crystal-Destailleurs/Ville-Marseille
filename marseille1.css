@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
-/* Styles globaux du site */
+/* -------------------------------------------------------------------Styles globaux du site */
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    backdrop-filter: blur(5px);
+    font-family: 'PT Serif', serif;
 }
 
+main {
+    padding: 20px;
+    background-image: url(./assets/escalier-gare-st-chrls.jpg);
+    background-attachment: fixed;
+}
+/* ---------------------------------------------------------------------Styles du header */
 header {
     background-color: #0072b6;
     color: #fff;
@@ -16,12 +24,9 @@ header {
 }
 
 nav {
-    text-align: left; /* Aligner le texte à gauche */
+    text-align: left; 
 }
 
-.logo-marseille {
-
-}
 
 nav {
     padding-top: 75px;
@@ -43,12 +48,12 @@ nav {
     color: rgb(230, 228, 228);
     font-weight: bold;
     font-size: 20px;
-    padding: 0 10px; /* Ajouter un espacement */
-    transition: color 0.3s; /* Ajouter une transition de couleur */
+    padding: 0 10px; 
+    transition: color 0.3s; /
 }
 
 .menu a:hover {
-    color: #ff9900; /* Changer la couleur lors du survol */
+    color: #ff9900; 
 }
 
 .dropdown {
@@ -60,24 +65,23 @@ nav {
     position: absolute;
     background-color: #1b1717e5;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    top: 100%; /* Positionner le menu déroulant sous l'élément parent */
+    top: 100%; 
     min-width: 200px;
     text-align: left;
-    transition: opacity 0.5s, transform 0.5s; /* Ralentir l'ouverture du menu déroulant */
-    transform: translateX(-100%); /* Déplacer le sous-menu à gauche de l'écran */
-    opacity: 0; /* Cacher initialement le menu */
+    transition: opacity 0.5s, transform 0.5s; 
+    transform: translateX(-100%); 
+    opacity: 0; 
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    transform: translateX(0); /* Rétablir la position initiale pour l'effet d'ouverture */
-    opacity: 1; /* Afficher le menu déroulant en douceur */
+    transform: translateX(0); 
+    opacity: 1; 
 }
 
 .dropdown-content li {
     padding: 10px;
 }
-
 
 h1 {
     display: flex;
@@ -98,28 +102,25 @@ h1 {
     display: flex;
 }
 
-
-body {
-    
-    backdrop-filter: blur(5px);
-    font-family: 'PT Serif', serif;
-}
-
 .fondations {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     text-align: center;
-    border: 2px solid rgb(100, 171, 219);
+    border: 2px solid azure;
 }
 
-.fondations h3 {
-    color: rgb(0, 0, 0);
+.fondations h2 {
+    color: azure;
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
     text-decoration: underline;
+}
+
+.fondations p {
+    color: azure;
 }
 
 .fondations img {
@@ -127,39 +128,46 @@ body {
 }
 
 .siecles {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     text-align: center;
-    border: 2px solid rgb(100, 171, 219);
+    border: 2px solid azure;
 }
 
-.siecles h3 {
-    color: rgb(0, 0, 0);
+.siecles h2 {
+    color: rgba(255, 255, 255, 0.801);
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
     text-decoration: underline;
+}
+
+.siecles p {
+    color: rgba(255, 255, 255, 0.801);
 }
 
 .ajd {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     text-align: center;
-    border: 2px solid rgb(100, 171, 219);
+    border: 2px solid rgba(255, 255, 255, 0.801);
 }
 
-.ajd h3 {
-    color: rgb(0, 0, 0);
+.ajd h2 {
+    color: rgba(255, 255, 255, 0.801);
     text-transform: uppercase;
     text-align: center;
     border-radius: 10px;
     text-decoration: underline;
 }
 
+.ajd p {
+    color: rgba(255, 255, 255, 0.801);;
+}
 
 
 .grid {
@@ -168,20 +176,23 @@ body {
 }
 
 .Informations {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     
-    border: 2px solid rgb(100, 171, 219);
-
+    border: 2px solid rgba(255, 255, 255, 0.801);
 }
 
-.Informations h3 {
-    color: rgb(0, 0, 0);
+.Informations h2 {
+    color: rgba(255, 255, 255, 0.801);
     text-transform: uppercase;
     text-align: center;
     text-decoration: underline;
+}
+
+.Informations p {
+    color: rgba(255, 255, 255, 0.801);
 }
 
 .Informations ul {
@@ -196,34 +207,39 @@ body {
 }
 
 .Transports {
-    background-color: rgba(255, 255, 255, 0.801);
+    background-color: rgba(63 64 65 / 81%);
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
     
-    border: 2px solid rgb(100, 171, 219);
+    border: 2px solid rgba(255, 255, 255, 0.801);
 
 }
 
-.Transports h3 {
-    color: rgb(0, 0, 0);
+.Transports h2 {
+    color: rgba(255, 255, 255, 0.801);
     text-transform: uppercase;
     text-align: center;
     text-decoration: underline;
 }
 
-.Transports h3:visited {
-    color: black;
+.Transports h2:visited {
+    color: rgba(255, 255, 255, 0.801);
 }
 
 .Transports ul {
     list-style: none;
     text-align: center;
     margin-left: -35px;
+    color: rgba(255, 255, 255, 0.801);
+}
+
+.Transports li a {
+    color: rgba(255, 255, 255, 0.801);
 }
 
 
-/* Styles pour le footer */
+/* ------------------------------------------------------------------Styles pour le footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -234,7 +250,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;a
+    text-align: center;
 }
 
 .footer-menu li {
@@ -247,11 +263,11 @@ footer {
     color: #fff;
     font-weight: bold;
     font-size: 14px;
-    transition: color 0.3s; /* Ajouter une transition de couleur */
+    transition: color 0.3s; 
 }
 
 .footer-menu a:hover {
-    color: #ff9900; /* Changer la couleur lors du survol */
+    color: #ff9900; 
 }
 
 #logo-marseille-f img {
