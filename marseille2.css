@@ -3,7 +3,7 @@
 /* Styles globaux du site */
 
 header {
-    background: url(assets/bg.jpg) no-repeat center/cover ;
+    background: url(./assets/bg.jpg) no-repeat center/cover ;
     height: 100px;
 }
 
@@ -30,9 +30,6 @@ nav {
     text-align: left; /* Aligner le texte à gauche */
 }
 
-.logo-marseille {
-
-}
 
 nav {
     padding-top: 75px;
@@ -94,27 +91,19 @@ nav {
 }
 
 
-
-
-
 h1 {
     display: flex;
     font-size: 3.5em;
     text-align: center;
     text-transform: uppercase;
     font-family: 'PT Serif', serif;
-    background: url(assets/bg2.jpg) no-repeat center/cover;
+    background: url(./assets/randonnée-Marseille.jpg) no-repeat center/cover;
     height: 350px;
     justify-content: center;
     align-items: center;
     align-content: center;
     color: white;
     text-shadow: 3px 3px 10px black ;
-}
-
-header {
-    background: url(assets/bg.jpg) no-repeat center/cover ;
-    height: 100px;
 }
 
 body {
@@ -138,80 +127,101 @@ body {
     margin-left: -35px;
 }
 
-.balade1 {
+.articles {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(3, 19rem);
+    justify-content: space-around;
+    grid-gap: 10px;
+    margin-left: -20px;
+    margin-right: 20px;
     
 }
 
-.belvedere {
-    background-color: rgba(255, 255, 255, 0.801);
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid rgb(100, 171, 219);
-}
-
-.goudes {
-    background-color: rgba(255, 255, 255, 0.801);
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid rgb(100, 171, 219);
-}
-
-.balade2 {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.puget {
-    background-color: rgba(255, 255, 255, 0.801);
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid rgb(100, 171, 219);
-}
-
-.calanques {
-    background-color: rgba(255, 255, 255, 0.801);
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid rgb(100, 171, 219);
-}
-
-.pagnol {
-    background-color: rgba(255, 255, 255, 0.801);
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-    border: 2px solid rgb(100, 171, 219);
-}
-
-.belvedere h2, .goudes h2, .puget h2, .calanques h2 {
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
     
 }
 
-.belvedere, .goudes, .puget, .calanques {
-    background-color: #fff;
+.container, .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    justify-content: center;
+    align-items: flex-start;
+    background: white;
     border-radius: 20px;
-    padding: 10px;
-    max-height: 200px;
-    overflow: scroll ;
+    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+    transition: 0.5s;
+    
 }
 
-.belvedere::-webkit-scrollbar,
-.goudes::-webkit-scrollbar,
-.puget::-webkit-scrollbar,
-.calanques::-webkit-scrollbar {
-  display: none;
+
+.container .card:hover {
+    height: 450px;
+
 }
+
+.container, .card .imgBox {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.container, .card:hover .imgBox {
+    top: -100px;
+    scale: 0.75;
+    box-shadow : 0 15px 45px rgba(0, 0, 0, 0.249);
+}
+
+.container, .card .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container, .card .content {
+    position: absolute;
+    top: 230px;
+    width: 100%;
+    padding: 0 30px;
+    height: 50px;
+    overflow: auto;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.content {
+}
+
+.container, .card:hover .content {
+    top: 100px;
+    height: 200px;
+
+}
+
+.container, .card .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
 
 /* Styles pour le footer */
 footer {
