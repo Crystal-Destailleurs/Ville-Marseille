@@ -4,6 +4,9 @@
 header {
     background: url(assets/bg.jpg) no-repeat center/cover ;
     height: 100px;
+    background-color: #0072b6;
+    color: #fff;
+    padding: 10px 0;
 }
 
 
@@ -12,18 +15,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-
-main {
-    background: url(./assets/background-abstrait.jpg);
+    background: url(./fond/fond\ parc.jpg);
     background-attachment: fixed;
-}
-
-header {
-    background-color: #0072b6;
-    color: #fff;
-    padding: 10px 0;
+    
 }
 
 nav {
@@ -177,9 +171,6 @@ h1 {
     transition: 0.5s;
 }
 
-.content {
-}
-
 .container, .card:hover .content {
     top: 100px;
     height: 200px;
@@ -202,7 +193,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;a
+    text-align: center;
 }
 
 .footer-menu li {
