@@ -1,16 +1,14 @@
 /* -------------------------------------------------------Styles globaux du site */
 
-/* Styles globaux du site */
 body {
+    background: url(./fond/fond-vieux-port.jpg);
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main {
-    display: flex
-}
 
 /* ---------------------------------------Style de base pour le header et la barre de navigation */
 header {
@@ -90,154 +88,74 @@ nav img {
     display: block;
 }
 
-/* -------------------------------------------------------Style CardHover Effect */
-.container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 100px 50px;
-    
+/* -------------------------------------------------------------Style pour les citations */
+
+.citations {
+  background-color: rgba(0, 0, 0, 0.863)(8, 8, 8);
+  padding: 20px; /* Espace intérieur pour améliorer la lisibilité */
 }
 
-.container .card {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    width: 350px;
-    height: 300px;
-    justify-content: center;
-    align-items: flex-start;
-    background: white;
-    border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0,0,0,0.15);
-    transition: 0.5s;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.container .card:hover {
-    height: 400px;
-
+.citations ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.829);
+  border-radius: 70px;
 }
 
-.container .card .imgBox {
-    position: absolute;
-    top: 20px;
-    width: 300px;
-    height: 220px;
-    background: rgb(20, 20, 19);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: 0.5s;
-
+.citations ul li p {
+  color: #f79d37;
+  flex: 1;
+  margin-left: 20px; 
 }
 
-.container .card:hover .imgBox {
-    top: -100px;
-    scale: 0.75;
-    box-shadow : 0 15px 45px rgba(0,0,0,0.2);
-}
-
-.container .card .imgBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.container .card .content {
-    position: absolute;
-    top: 252px;
-    width: 100%;
-    padding: 0 30px;
-    height: 50px;
-    overflow: hidden;
-    text-align: center;
-    transition: 0.5s;
-}
-
-.container .card:hover .content {
-    top: 130px;
-    height: 250px;
-
-}
-
-.container .card .content h2 {
-    font-size: 1.5em;
-    font-weight: 700;
+.citations img {
+  border-radius: 50%; 
+  height: 150px; 
+  width: auto; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
 
-
-
+/* ------------------------------------------------------------------Styles pour le footer */
 footer {
-    background-color: rgb(112, 168, 231);
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Aligner verticalement les éléments au centre */
-    color: white;
-}
-
-footer nav {
-    text-align: left;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
 }
 
 .footer-menu ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
 .footer-menu li {
-    display: inline-block;
-    margin-right: 20px;
+    display: inline;
+    margin: 0 20px;
 }
 
-.footer-menu li:last-child {
-    margin-right: 0;
-}
-
-.footer-menu li a {
+.footer-menu a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s; 
 }
 
-.footer-menu li a:hover {
-    color: #ffa500;
+.footer-menu a:hover {
+    color: #ff9900; 
 }
 
-/* Style pour le menu déroulant dans le footer */
-footer .dropdown-content {
-    background-color: rgba(47, 52, 58, 0.788);
-    border-radius: 12px;
-    position: absolute;
-    top: -200px; /* Modifier la valeur en fonction de la hauteur souhaitée du dropdown */
-    left: 0;
-    display: none;
-    min-width: 160px;
-    z-index: 1;
+#logo-marseille-f img {
+    margin-top: 20px;
 }
-
-footer .dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    display: block;
-    text-decoration: none;
-}
-
-footer .dropdown-content a:hover {
-    background-color: #555;
-    border-radius: 10px;
-}
-footer .dropdown:hover .dropdown-content {
-    display: block;
-}
-
 
 @media screen and (max-width: 820px) {
     .menu {
@@ -265,4 +183,5 @@ footer .dropdown:hover .dropdown-content {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+}
 }
