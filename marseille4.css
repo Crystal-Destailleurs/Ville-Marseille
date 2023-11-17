@@ -2,8 +2,6 @@
 
 /* -----------------------------------------------------------Styles globaux du site */
 header {
-    background: url(assets/bg.jpg) no-repeat center/cover ;
-    height: 100px;
     background-color: #0072b6;
     color: #fff;
     padding: 10px 0;
@@ -93,8 +91,8 @@ h1 {
 }
 
 .articles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+    display: flex;
+    flex-wrap: wrap; /* Trois colonnes égales */
     justify-content: space-around;
     grid-gap: 10px;
     margin-left: 20px;

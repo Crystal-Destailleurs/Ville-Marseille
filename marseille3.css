@@ -2,12 +2,6 @@
 
 /* Styles globaux du site */
 
-header {
-    background: url(assets/bg.jpg) no-repeat center/cover ;
-    height: 100px;
-}
-
-
 body {
     font-family: 'PT Serif', serif;
     background: url(./assets/plage.jpg);
@@ -99,11 +93,11 @@ h1 {
 }
 
 .articles {
-    display: grid;
-    grid-template-columns: repeat(3, 19rem);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     grid-gap: 10px;
-    margin-left: -20px;
+    margin-left: 20px;
     margin-right: 20px;
     
 }
@@ -223,4 +217,17 @@ footer {
 
 #logo-marseille-f img {
     margin-top: 20px;
+}
+
+@media screen and (max-width: 1120px) {
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+}
+
+@media screen and (max-width: 1220px){
+    html {
+        width: 100%;
+    }
 }
