@@ -1,39 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
-/* Styles globaux du site */
+/* -------------------------------------------------------------------Styles globaux du site */
 
 header {
     background: url(./assets/bg.jpg) no-repeat center/cover ;
     height: 100px;
-}
-
-body {
-    
-    backdrop-filter: blur(5px);
-    font-family: 'PT Serif', serif;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header {
     background-color: #0072b6;
     color: #fff;
     padding: 10px 0;
 }
 
-nav {
-    text-align: left; /* Aligner le texte à gauche */
+body { 
+    background: url(./fond/fond\ randonnées.jpeg);
+    background-attachment: fixed;
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
 }
 
-
 nav {
+    text-align: left;
     padding-top: 75px;
 }
+
 
 .menu {
     list-style: none;
@@ -41,9 +32,6 @@ nav {
     margin: 0;
 }
 
-.menu ul {
-    
-}
 
 .menu li {
     display: inline-block;
@@ -106,11 +94,6 @@ h1 {
     text-shadow: 3px 3px 10px black ;
 }
 
-body {
-    
-    backdrop-filter: blur(5px);
-    font-family: 'PT Serif', serif;
-}
 
 .intro {
     background-color: rgba(255, 255, 255, 0.801);
@@ -207,8 +190,7 @@ body {
     transition: 0.5s;
 }
 
-.content {
-}
+
 
 .container, .card:hover .content {
     top: 100px;
@@ -234,7 +216,7 @@ footer {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;a
+    text-align: center;
 }
 
 .footer-menu li {

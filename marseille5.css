@@ -4,6 +4,9 @@
 header {
     background: url(assets/bg.jpg) no-repeat center/cover ;
     height: 100px;
+    background-color: #0072b6;
+    color: #fff;
+    padding: 10px 0;
 }
 
 
@@ -12,13 +15,16 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: url(./fond/Fond\ musée.jpeg);
+    background-attachment: fixed;
+}
+
+main {
     
 }
 
 header {
-    background-color: #0072b6;
-    color: #fff;
-    padding: 10px 0;
+    
 }
 
 nav {
