@@ -18,7 +18,7 @@ main {
 }
 /* ---------------------------------------------------------------------Styles du header */
 header {
-    background-color: #0072b6;
+    background-color: #41b2f3;
     color: #fff;
     padding: 10px 0;
 }
@@ -33,10 +33,11 @@ nav {
 }
 
 nav img {
-    width: 130px;
+    width: 180px;
     margin-right: auto;
     right: 2%;
     margin-left: 75%;
+    border-radius: 15px;
 }
 
 .menu {
@@ -310,4 +311,5 @@ footer {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+}
 }
