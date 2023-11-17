@@ -41,20 +41,19 @@ nav img {
     align-items: center;
 }
 
+
 .menu li {
-    
-    margin-right: 20px;
-    
+    display: inline-block;
+    position: relative;
 }
 
-.menu li:last-child {
-    margin-right: 0; 
-}
-
-.menu li a {
-    text-decoration: none; 
-    color: white; 
-    font-weight: bold; 
+.menu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 10px; /* Ajouter un espacement */
+    transition: color 0.3s; /* Ajouter une transition de couleur */
 }
 
 .menu li a:hover {
@@ -89,13 +88,6 @@ nav img {
 
 .dropdown:hover .dropdown-content {
     display: block;
-}
-
-/* ------------------------------------------------------Style pour le logo à droite */
-.logo {
-    width: 120px;
-    margin-left: auto; 
-    border-radius: 12px;
 }
 
 /* -------------------------------------------------------Style CardHover Effect */
