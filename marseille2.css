@@ -24,10 +24,11 @@ nav {
 }
 
 nav img {
-    width: 130px;
+    width: 180px;
     margin-right: auto;
     right: 2%;
     margin-left: 75%;
+    border-radius: 15px;
 }
 
 .menu {
@@ -293,4 +294,5 @@ footer {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+}
 }
