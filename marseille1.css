@@ -136,6 +136,7 @@ h1 {
 
 .fondations img {
     border-radius: 20px;
+   
 }
 
 .siecles {
@@ -299,6 +300,10 @@ footer {
         margin-right: auto;
         right: 2%;
         margin-left: 0;
+    }
+
+    .fondations img {
+        width: 95%;
     }
 }
 
