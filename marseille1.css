@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------Styles globaux du site */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,6 +27,7 @@ header {
 
 nav {
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav img {

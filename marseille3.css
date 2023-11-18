@@ -3,89 +3,91 @@
 /* Styles globaux du site */
 
 body {
-    font-family: 'PT Serif', serif;
+    font-family: Arial, Helvetica, sans-serif;
     background: url(./assets/plage.jpg);
     background-attachment: fixed;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
-}
-
-header {
-    background-color: #41b2f3;
-    color: #fff;
-    padding: 10px 0;
-}
-
-nav {
-    text-align: left; /* Aligner le texte à gauche */
-    padding-top: 75px;
+}   
+    header {
+        background-color: rgb(47 178 255 / 78%);
+        padding: 10px; 
+        display: flex; 
+        justify-content: space-between; 
+        margin: 0 0 10px 0px;
+    }
     
-}
-
-nav img {
-    width: 180px;
-    margin-right: auto;
-    right: 2%;
-    margin-left: 75%;
-    border-radius: 15px;
-}
-
-.menu {
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 10% 10% 10% 60%;
-    align-items: center;
-}
-
-.menu li {
-    display: inline-block;
-    position: relative;
-}
-
-.menu a {
-    text-decoration: none;
-    color: rgb(230, 228, 228);
-    font-weight: bold;
-    font-size: 20px;
-    padding: 0 10px; /* Ajouter un espacement */
-    transition: color 0.3s; /* Ajouter une transition de couleur */
-}
-
-.menu a:hover {
-    color: #ff9900; /* Changer la couleur lors du survol */
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #1b1717e5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    top: 100%; /* Positionner le menu déroulant sous l'élément parent */
-    min-width: 200px;
-    text-align: left;
-    transition: opacity 0.5s, transform 0.5s; /* Ralentir l'ouverture du menu déroulant */
-    transform: translateX(-100%); /* Déplacer le sous-menu à gauche de l'écran */
-    opacity: 0; /* Cacher initialement le menu */
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    transform: translateX(0); /* Rétablir la poremsition initiale pour l'effet d'ouverture */
-    opacity: 1; /* Afficher le menu déroulant en douceur */
-}
-
-.dropdown-content li {
-    padding: 10px;
-}
-/* fin navbar */
+    nav {
+        width: 100%;
+    }
+    
+    nav img {
+        width: 180px;
+        margin-right: auto;
+        margin-left: 90%;
+        border-radius: 50px;
+    }
+    
+    
+    .menu {
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 10% 10% 10% 60%;
+        align-items: center;
+    }
+    
+    
+    .menu li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 20px;
+        padding: 0 10px; 
+        transition: color 0.3s;
+    }
+    
+    .menu li a:hover {
+        color: #ffa500; 
+    }
+    
+    /* -------------------------------------------------------------Style pour le menu déroulant */
+    .dropdown {
+        position: relative;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        min-width: 160px;
+        z-index: 1;
+        border-radius: 12px;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #555;
+        border-radius: 10px;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 
 h1 {
     display: flex;
