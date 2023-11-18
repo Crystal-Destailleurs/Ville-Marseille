@@ -4,7 +4,7 @@ body {
     background: url(./fond/fond-vieux-port.jpg);
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -115,6 +115,39 @@ h1:hover {
 
 .titre {
     text-align: center;
+}
+
+/* -----------------------------------------------------Styles pour la section de présentation */
+.presentation {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.presentation .container {
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+.presentation h2 {
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2em;
+}
+
+.presentation p {
+    font-size: 1.2em;
+    color: #555;
+}
+.presentation a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.presentation a:hover {
+    color: #ffd61e;
 }
 
 /* -------------------------------------------------------------Style pour les citations */
