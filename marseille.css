@@ -1,4 +1,4 @@
-/* -------------------------------------------------------Styles globaux du site */
+/* --------------------------------------------------------------Styles globaux du site */
 
 body {
     background: url(./fond/fond-vieux-port.jpg);
@@ -9,13 +9,13 @@ body {
     box-sizing: border-box;
 }
 
-
-/* ---------------------------------------Style de base pour le header et la barre de navigation */
+/* -------------------------------------------Style de base pour le header et la barre de navigation */
 header {
-    background-color: rgb(112, 168, 231);
+    background-color: rgb(47 178 255 / 78%);
     padding: 10px; 
     display: flex; 
     justify-content: space-between; 
+    margin: 0 0 10px 0px;
 }
 
 nav {
@@ -23,10 +23,10 @@ nav {
 }
 
 nav img {
-    width: 130px;
+    width: 180px;
     margin-right: auto;
-    right: 2%;
-    margin-left: 75%;
+    margin-left: 90%;
+    border-radius: 50px;
 }
 
 
@@ -50,8 +50,8 @@ nav img {
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
-    padding: 0 10px; /* Ajouter un espacement */
-    transition: color 0.3s; /* Ajouter une transition de couleur */
+    padding: 0 10px; 
+    transition: color 0.3s;
 }
 
 .menu li a:hover {
@@ -87,12 +87,41 @@ nav img {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* ----------------------------------------------------------------------Style pour le Titre*/
+
+.titre h1 {
+    background-color: rgba(29, 30, 31, 0.78); 
+    color: #fff; 
+    padding: 20px; 
+    border-radius: 12px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 30px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    display: inline-block; 
+    max-width: calc(100% - 40px); 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+h1:hover {
+    background-color: rgb(47 178 255 / 78%);
+    color: #f1c40f; 
+}
+
+
+.titre {
+    text-align: center;
+}
 
 /* -------------------------------------------------------------Style pour les citations */
 
 .citations {
   background-color: rgba(0, 0, 0, 0.863)(8, 8, 8);
-  padding: 20px; /* Espace intérieur pour améliorer la lisibilité */
+  padding: 20px;
 }
 
 ul {
@@ -112,14 +141,33 @@ ul {
   color: #f79d37;
   flex: 1;
   margin-left: 20px; 
+  padding: 20px;
 }
 
 .citations img {
-  border-radius: 50%; 
-  height: 150px; 
-  width: auto; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-}
+    border-radius: 50%;  
+    height: 150px; 
+    width: auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .citations img:hover {
+    opacity: 0.8; 
+  }
+  
+  .citations img[title]::after {
+    content: attr(title);
+    display: block;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
 
 
 /* ------------------------------------------------------------------Styles pour le footer */

@@ -18,27 +18,24 @@ main {
 }
 /* ---------------------------------------------------------------------Styles du header */
 header {
-    background-color: #41b2f3;
-    color: #fff;
-    padding: 10px 0;
+    background-color: rgb(47 178 255 / 78%);
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 0 0 10px 0px;
 }
 
 nav {
-    text-align: left; 
-}
-
-
-nav {
-    padding-top: 75px;
+    width: 100%;
 }
 
 nav img {
     width: 180px;
     margin-right: auto;
-    right: 2%;
-    margin-left: 75%;
-    border-radius: 15px;
+    margin-left: 90%;
+    border-radius: 50px;
 }
+
 
 .menu {
     list-style-type: none; 
@@ -49,6 +46,7 @@ nav img {
     align-items: center;
 }
 
+
 .menu li {
     display: inline-block;
     position: relative;
@@ -56,17 +54,18 @@ nav img {
 
 .menu a {
     text-decoration: none;
-    color: rgb(230, 228, 228);
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 20px;
     padding: 0 10px; 
-    transition: color 0.3s; /
+    transition: color 0.3s;
 }
 
-.menu a:hover {
-    color: #ff9900; 
+.menu li a:hover {
+    color: #ffa500; 
 }
 
+/* -------------------------------------------------------------Style pour le menu déroulant */
 .dropdown {
     position: relative;
 }
@@ -74,24 +73,45 @@ nav img {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #1b1717e5;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    top: 100%; 
-    min-width: 200px;
-    text-align: left;
-    transition: opacity 0.5s, transform 0.5s; 
-    transform: translateX(-100%); 
-    opacity: 0; 
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 12px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    transform: translateX(0); 
-    opacity: 1; 
 }
+/* ----------------------------------------------------------------------Style pour le Titre*/
 
-.dropdown-content li {
-    padding: 10px;
+.titre h1 {
+    background-color: rgba(29, 30, 31, 0.78); 
+    color: #fff; 
+    padding: 20px; 
+    border-radius: 12px; 
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-bottom: 30px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 24px; 
+    font-weight: bold; 
+    display: inline-block; 
+    max-width: calc(100% - 40px); 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 h1 {
