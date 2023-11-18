@@ -1,7 +1,8 @@
 /* --------------------------------------------------------------Styles globaux du site */
 
 body {
-    background: url(./fond/fond-vieux-port.jpg);
+    background: url(./fond/fond\ page\ acceuil.jpg);
+    background-position: center/cover;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     margin: auto;
@@ -87,35 +88,6 @@ nav img {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-/* ----------------------------------------------------------------------Style pour le Titre*/
-
-.titre h1 {
-    background-color: rgba(29, 30, 31, 0.78); 
-    color: #fff; 
-    padding: 20px; 
-    border-radius: 12px; 
-    text-align: center; 
-    text-transform: uppercase; 
-    letter-spacing: 3px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    margin-bottom: 30px; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    font-size: 24px; 
-    font-weight: bold; 
-    display: inline-block; 
-    max-width: calc(100% - 40px); 
-    transition: background-color 0.3s, color 0.3s; 
-}
-
-h1:hover {
-    background-color: rgb(47 178 255 / 78%);
-    color: #f1c40f; 
-}
-
-
-.titre {
-    text-align: center;
-}
 
 /* -----------------------------------------------------Styles pour la section de présentation */
 .presentation {
@@ -182,11 +154,11 @@ ul {
     height: 150px; 
     width: auto; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-  }
+}
   
   .citations img:hover {
-    opacity: 0.8; 
-  }
+    opacity: 0.9; 
+}
   
   .citations img[title]::after {
     content: attr(title);
@@ -199,7 +171,7 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-  }
+}
   
 
 

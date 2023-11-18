@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: auto;
-    background: url(./fond/fond\ page\ acceuil.jpg);
+    background: url(./fond/fond-vieux-port.jpg);
     background-attachment: fixed;
     background-size:cover;
 }
